@@ -6,6 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mundo DBZ - Pedidos</title>
     <link rel="stylesheet" href="../css/base.css" />
+    <style>
+      #colunas {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        margin: 0 auto;
+      }
+      .card {
+        display: flex;
+        flex-basis: 340px; /* Alternativa ao width em elementos flex */
+      }
+      .card:nth-child(odd){
+        max-height: 210px;
+      }
+      .card img {
+        max-height: 52px;
+        margin-right: 35px;
+      }
+      ol{
+        list-style-image: url('../img/EsferaDoDragao.png');
+      }
+      li{
+        font-size: 12px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -108,12 +133,20 @@
                 Pilaf deseja, sem querer, que Goku virasse criança de novo.
               </li>
               <li>Bebi deseja que o planeta Plant volte a existir.</li>
-              <li>É desejado que a Terra seja restaurada, depois da saga de Bebi.</li>
-              <li>É desejado que todos os mortos pelos dragões, Kuririn e #18 sejam revividos, depois da saga dos evil Shenlongs.</li>
+              <li>
+                É desejado que a Terra seja restaurada, depois da saga de Bebi.
+              </li>
+              <li>
+                É desejado que todos os mortos pelos dragões, Kuririn e #18
+                sejam revividos, depois da saga dos evil Shenlongs.
+              </li>
             </ol>
           </div>
         </article>
       </section>
     </main>
+    <footer>
+        <p>&copy; Desenvolvivido por Prof° Esp. Anderson Choren - 2022</p>
+    </footer>
   </body>
 </html>
