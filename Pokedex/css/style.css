@@ -1,0 +1,82 @@
+/* Regras genérica */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --default-value: 10px;
+    /* Cores */
+    --red-background: #CC5050;
+    --red-header: #E3350D;
+    --light-green: #9BCC50;
+    --orange: #FD7D24;
+    --yellow: #F7DE3F;
+    --olive: #739F40;
+}
+
+h1{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.75rem;
+}
+
+body{
+    background-color: var(--red-background);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, 120px);
+    padding: 1rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--default-value);
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.card>img{
+    width: 100%;
+    max-width: 80px;
+}
+
+header{
+    padding: var(--default-value);
+    background-color: var(--red-header);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.light-green{
+    background-color: var(--light-green);
+}
+
+.olive{
+    background-color: var(--olive);
+}
+
+.yellow{
+    background-color: var(--yellow);
+}
+
+.orange{
+    background-color: var(--orange);
+}
+
+/* Regras para telas grandes */
+@media screen and (min-width:992px){
+    html{
+        font-size: 32px;
+    }
+}
